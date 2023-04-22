@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Encriptador de Texto</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <img src=".." alt="">
+        </header>
+    </div>
+    <div>
+        <main>
+
+        </main>
+    </div>
+    <div>
+        <input type="text" id="textoEncriptado">
+        <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10"></textarea>
+        <button type="button" id="botonEncriptador">Encriptar</button>
+        <button type="button" id="botonDesencriptador">Desencriptar</button>
+        <button type="button" id="botonCopiar">Copiar</button>
+
+    </div>
+    <div>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+<script>
+    var btn = document.querySelector("#botonEncriptador");
+    btn.onclick = encriptar;
+    var btn2 = document.querySelector("#botonDesencriptador");
+    btn2.onclick = desencriptar;
+    var btn3 = document.querySelector("#botonCopiar");
+    btn3.onclick = copiar;
+</script>
+
+</html>
