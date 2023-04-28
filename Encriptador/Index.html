@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:ital,wght@0,600;1,600;1,700&display=swap"
+        rel="stylesheet">
     <script type="text/javascript" src="script.js"></script>
     <title>Encriptador de Texto</title>
 </head>
 
 <body>
     <div>
-        <header>
-            <img src=".." alt="">
+        <header class="encabezado">
+            <img src="./Imagenes/logo.png" alt="Logo de Alura" class="logoImg">
+            <h4 class="titulo">ENCRIPTADOR DE TEXTOS</h3>
         </header>
     </div>
-    <div>
-        <main>
-
-        </main>
+    <div class="seciones">
+        <section class="seccion1">
+            <section class="sec1text">
+                <input type="text" id="textoEncriptado" placeholder="Ingrese el texto aqui">
+            </section>
+            <section class="sec1Btn">
+                <button type="button" id="botonEncriptador" class="btn">Encriptar</button>
+                <button type="button" id="botonDesencriptador" class="btn">Desencriptar</button>
+            </section>
+        </section>
+        <section class="seccion2">
+            <textarea name="resultado" id="textoDesencriptado" rows="14" cols="600" class="cajatexto"></textarea>
+            <div class="contendorImg">
+                <img src="./Imagenes/muneco.png" alt="muñeco" id="muneco">
+                <h6 class="textImg" id="imgmuneco">No hay ningun texto</h6>
+            </div>
+            <button type="button" id="botonCopiar" class="btncopiar">Copiar</button>
+        </section>
     </div>
     <div>
-        <input type="text" id="textoEncriptado">
-        <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10"></textarea>
-        <button type="button" id="botonEncriptador">Encriptar</button>
-        <button type="button" id="botonDesencriptador">Desencriptar</button>
-        <button type="button" id="botonCopiar">Copiar</button>
-
-    </div>
-    <div>
-        <footer>
-
+        <footer class="piePagina">
+            <h5>Realizado por : Rosselli Dario</h4>
         </footer>
     </div>
 </body>
