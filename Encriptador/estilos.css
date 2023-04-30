@@ -31,11 +31,18 @@ body {
 .seciones {
   height: 250px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
-input {
+
+
+.cajatxtEncrip{
+  display: flex;
+  height: 150px;
   width: 200px;
+  text-align: center;
+  justify-content: center;
 }
 
 .seccion1 {
@@ -45,16 +52,18 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .seccion2 {
-  width: 40%;
-  height: 50x;
-  display: flex;
-  margin-left: 15px;
   padding: 15px;
+  margin-right: 15px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: end;
 }
 
 .sec1Btn {
@@ -72,19 +81,26 @@ input {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  border: 1px solid #0a3871;
+  border: 2px solid #0a3871;
   border-radius: 24px;
   text-align: center;
 
   color: #0a3871;
+  transition: 0.5s;
 }
+
+.btn:hover{
+ color: black;
+}
+
+
 
 .contendorImg {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 70%;
-  height: 90%;
+  height: 98%;
 }
 
 .textImg{
@@ -95,30 +111,61 @@ input {
 }
 
 .cajatexto{
-    display: none;  
+    display: none;
+    width: 300px;
+    height: 900px;  
+}
+
+.secbotcop{
+  display: flex;
+ justify-content: center;
+ 
 }
 
 .btncopiar {
   display: none;
-  align-content: space-evenly;
-  height: 25px;
-  width: 50px;
-  padding: 2px;
-  margin: 4px;
+  padding-left: 15px;
+  width: 90px;
   font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight: 50;
-  font-size: 14px;
-  line-height: 20px;
-  border: 1px solid #0a3871;
+  font-weight: 400;
+  font-size: 20px;
+  border: 2px solid #0a3871;
   border-radius: 24px;
   text-align: center;
+  
 
-  color: green;
+  color: #0a3871;;
 }
 
-footer {
+.btncopiar:hover{
+  color: black;
+ }
+
+.piePagina {
+  padding: 30px;
+  display: flex;
   width: 100%;
-  height: 60px;
+  height: 20px;
   background-color: #bbc1ca;
+  justify-content: start;
+  text-align: end;
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  gap: 20px;
 }
+
+.imgredes{
+ display: flex;
+ flex-direction: row;
+ width: 50px;
+ height: 50px;
+ gap: 10px;
+}
+ .imgLinkendin{
+  height: 20px;
+ }
+
+ .imgGithub{
+  height: 20px;
+ }
