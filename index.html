@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:ital,wght@0,600;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Encriptador de Texto</title>
+</head>
+
+<body>
+    <div>
+        <header class="encabezado">
+            <a href="https://www.aluracursos.com/"><img src="./Imagenes/logo.png" alt="Logo de Alura" class="logoImg" href="https://www.aluracursos.com/"></a>
+            <h4 class="titulo">ENCRIPTADOR DE TEXTOS</h3>
+        </header>
+    </div>
+    <div class="seciones">
+        <section class="seccion1">
+            <section class="sec1text">
+                <input type="text" id="textoEncriptado" placeholder="Ingrese el texto aqui" class="cajatxtEncrip">
+                <h6>Solo letras minúsculas sin acentos!</h6>
+            </section>
+            <section class="sec1Btn">
+                <button type="button" id="botonEncriptador" class="btn">Encriptar</button>
+                <button type="button" id="botonDesencriptador" class="btn">Desencriptar</button>
+            </section>
+        </section>
+        <section class="seccion2">
+            <input name="resultado" id="textoDesencriptado" class="cajatexto"></input>
+            <div class="contendorImg">
+                <img src="./Imagenes/muneco.png" alt="muñeco" id="muneco">
+                <h6 class="textImg" id="imgmuneco">No hay ningun texto</h6>
+            </div>
+            <div class="secbotcop">
+            <button type="button" id="botonCopiar" class="btncopiar">Copiar</button>
+            </div> 
+        </section>
+    </div>
+    <div>
+        <footer class="piePagina">
+            <h5>Realizado por : ® Rosselli Dario</h4>
+            <div class="imgredes">
+            
+            <a href="https://www.linkedin.com/in/dario-rosselli/"><img src="./Imagenes/Linkedin.png" class="imgLinkendin"></a>
+            
+            
+            <a href="https://github.com/DarioR88"><img src="./Imagenes/GitHub.png" class="imgGithub"></a>
+            
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+    var btn = document.querySelector("#botonEncriptador");
+    btn.onclick = encriptar;
+    var btn2 = document.querySelector("#botonDesencriptador");
+    btn2.onclick = desencriptar;
+    var btn3 = document.querySelector("#botonCopiar");
+    btn3.onclick = copiar;
+</script>
+
+</html>
