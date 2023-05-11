@@ -1,6 +1,6 @@
 # Encriptador-de-texto-Alura.github.io
-Desafío de Alura, creación de un encriptador de texto
-Creamos una aplicación que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
+Desafío de Alura, creación de un encriptador de texto.
+Crearemos una aplicación que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
 
 Las "llaves" de encriptación que utilizaremos son las siguientes:
 
